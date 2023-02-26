@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AI福チャット</title>
+  
+    <style type="text/css">    
+    body{
+         -webkit-text-size-adjust: 100%;
+         
+         }
+　 input,select,textarea{
+          background: #FFEEFF;
+         }
+    input,select,textarea,button,label{
+          font-size:45px;
+         }
+     h1{
+          text-align:center;
+          line-height:5px;
+       }
+     h2{
+          text-align:right;
+           line-height:5px;
+       }
+     input[type=radio] {
+       width: 50px;
+       height: 50px;
+       vertical-align: middle;
+       }
+        
+     #nowLoading {
+     display: table;
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: #C0C0C0;
+     opacity: 0.8;
+     font-size: 100px;
+     color: #0000FF;
+     }
+ 
+    #innerMsg {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50px;
+    z-index:50;
+    background: url("https://drive.google.com/uc?export=view&id=1kc5eGaHbaZTsTSe4G73djS-KCrh9JIXH&usp=sharing") center center no-repeat;
+    background-size:50% auto;
+    background-position: top;
+     
+    </style>
+</head>
+
+<body>
+    
+<h1>
+<font size="10" color="#666666">AI福チャット 入力フォーム</font>
+</h1>
+<h2>
+<font size="5" color="#aaaaaa">AI FUKU Chat 01-00-00</font>
+</h2>
+
+<div class="container">
+    
+    <form class="formmemo" id="myForm"onsubmit="myFormSubmit(this);">  
+        <div class="formmemo-group">
+            <label class="formmemo-label" for="input_customername">質問/お願いを入力してください（Powered by GPT-3）</label>
+           
+            <div class="formmemo-data">
+                <div style="margin-left:0%;margin-right:10%;">
+                <textarea name="speach1" cols="35" rows="10" id="input_speach1" placeholder="例：うるう年を判定するpythonのコードを教えて下さい。"></textarea>
+                </div>
+            </div>
+           
+        </div>
+      
+        
+         <div class="formmemo-group">
+            <div class="formmemo-button">
+                 
+                 
+                 <div style="margin-left:10%;margin-right:10%;">
+                     <input type="submit" id="input_send" style="width:100%;padding:10px;font-size:100px;background-color:#008000;color:#FFFFFF" value="実行する" />
+                 </div>
+            </div>
+        </div>
+        
+        <br>
+    </form>
+  
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script src="liff.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
